@@ -566,8 +566,8 @@ function App() {
                   <QrCode size={26} /> QR Code Required
                 </h3>
                 <p className="qr-copy">
-                  Your personal QR code will be sent to you after RSVP. Have it
-                  ready — it will be scanned at the entrance.
+                  Your personal QR code will be sent to you before the day of
+                  the event. Have it ready — it will be scanned at the entrance.
                 </p>
               </div>
             </div>
