@@ -543,14 +543,14 @@ function App() {
               >
                 <MapPin size={17} /> Get directions
               </a>
-              <a
+              {/* <a
                 className="secondary-button"
                 href="https://wa.me/2348067717236?text=Hello%20Emmanuel%2C%20I%27d%20like%20to%20RSVP%20for%20Joy%20%26%20Daniel%27s%20wedding."
                 target="_blank"
                 rel="noreferrer"
               >
                 <MessageCircle size={17} /> RSVP
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -621,10 +621,9 @@ function App() {
                 <Ticket size={16} />
               </span>
               <p>
-                <strong>How it works:</strong> After submitting, your personal
-                QR code will be sent to you via your chosen delivery method —{" "}
-                <strong>email or phone</strong>. Present it at the venue
-                entrance on the day.
+                <strong>How it works:</strong> Expect the QR code to be sent to
+                your <strong>Email</strong> or <strong>Whatsapp</strong> before
+                the event. Present it at the venue entrance on the day.
               </p>
             </div>
 
