@@ -12,6 +12,7 @@ import {
   QrCode,
   Ticket,
   Send,
+  AlertTriangle,
   X,
 } from "lucide-react";
 import "./styles.css";
@@ -136,7 +137,7 @@ function RsvpModal({ name, onClose }) {
         <p className="modal-hashtag">#DanielGotJoy</p>
 
         <button className="primary-button modal-button" onClick={onClose}>
-          <Heart size={16} /> See you there
+          <AlertTriangle size={16} /> DO NOT SHARE THIS LINK.
         </button>
       </div>
       <Confetti />
@@ -386,6 +387,7 @@ function App() {
   const [status, setStatus] = useState("idle"); // idle | sending | done | error
   const [showModal, setShowModal] = useState(false);
   const [guestName, setGuestName] = useState("");
+  const [deliveryMethod, setDeliveryMethod] = useState("email"); // "email" | "phone"
 
   useScrollReveal();
 
@@ -569,6 +571,14 @@ function App() {
                 </p>
               </div>
             </div>
+
+            <div className="caution-banner">
+              <AlertTriangle size={18} color="red" />
+              <p>
+                Please note: this is an adults-only event — no children allowed
+              </p>
+              <AlertTriangle size={18} color="red" />
+            </div>
           </div>
         </div>
       </section>
@@ -602,8 +612,8 @@ function App() {
             </div>
             <h2>Confirm your attendance.</h2>
             <p>
-              Please confirm your attendance by filling in the form below.
-              Your unique QR code will be sent to your email after confirming.
+              Please confirm your attendance by filling in the form below. Your
+              unique QR code will be sent to your email after confirming.
             </p>
 
             <div className="how-it-works">
@@ -612,8 +622,18 @@ function App() {
               </span>
               <p>
                 <strong>How it works:</strong> After submitting, your personal
-                QR code will be sent to your <strong>email address</strong>.
-                Present it at the venue entrance on the day.
+                QR code will be sent to you via your chosen delivery method —{" "}
+                <strong>email or phone</strong>. Present it at the venue
+                entrance on the day.
+              </p>
+            </div>
+
+            <div className="rsvp-caution">
+              <AlertTriangle size={16} />
+              <p>
+                <strong>Please note:</strong> this invitation link cannot be
+                transferred or shared. Sharing it may cause you not to receive
+                your QR code.
               </p>
             </div>
           </div>
@@ -650,7 +670,27 @@ function App() {
               </label>
             </div>
 
-            <div className="form-row">
+            <div className="delivery-choice">
+              <span className="delivery-label">SEND MY QR CODE VIA</span>
+              <div className="delivery-toggle">
+                <button
+                  type="button"
+                  className={deliveryMethod === "email" ? "active" : ""}
+                  onClick={() => setDeliveryMethod("email")}
+                >
+                  Email
+                </button>
+                <button
+                  type="button"
+                  className={deliveryMethod === "phone" ? "active" : ""}
+                  onClick={() => setDeliveryMethod("phone")}
+                >
+                  Phone (WhatsApp)
+                </button>
+              </div>
+            </div>
+
+            {deliveryMethod === "email" ? (
               <label>
                 <span>EMAIL ADDRESS</span>
                 <input
@@ -660,6 +700,7 @@ function App() {
                   required
                 />
               </label>
+            ) : (
               <label>
                 <span>PHONE NUMBER</span>
                 <input
@@ -669,7 +710,7 @@ function App() {
                   required
                 />
               </label>
-            </div>
+            )}
 
             <button
               className="confirm-button"
