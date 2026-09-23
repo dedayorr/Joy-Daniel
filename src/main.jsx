@@ -613,7 +613,7 @@ function App() {
             <h2>Confirm your attendance.</h2>
             <p>
               Please confirm your attendance by filling in the form below. Your
-              unique QR code will be sent to your email after confirming.
+              unique QR code will be sent to your email or whatsapp after confirming.
             </p>
 
             <div className="how-it-works">
