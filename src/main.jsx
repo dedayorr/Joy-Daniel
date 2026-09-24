@@ -423,7 +423,7 @@ function App() {
 
         <nav className="nav container">
           <a href="#top" className="brand">
-            <img src={logo} alt="Joy & Daniel logo" />
+            {/* <img src={logo} alt="Joy & Daniel logo" /> */}
             <span>JOY & DANIEL</span>
           </a>
           <a className="nav-link" href="#details">
@@ -439,7 +439,7 @@ function App() {
 
           <p className="invitation-line reveal delay-2">
             With joyful hearts, we invite you to celebrate the
-            <strong> solemnization of their children</strong>
+            <strong> solemnization of the marriage of</strong>
           </p>
 
           <h1 className="couple-name reveal delay-3">
@@ -496,7 +496,7 @@ function App() {
             </h2>
             <p className="reveal reveal-left delay-2">
               The families of{" "}
-              <strong>Late Mr Ebon Echland &amp; Mrs Grace Abeng Igbara</strong>{" "}
+              <strong>Late Mr Ebon Echiand &amp; Mrs Grace Abeng Igbara</strong>{" "}
               and <strong>Late Mr Lawrence Obi &amp; Mrs Joan Udo Okobi</strong>{" "}
               invite you to share in this special day.
             </p>
@@ -574,9 +574,7 @@ function App() {
 
             <div className="caution-banner">
               <AlertTriangle size={18} color="red" />
-              <p>
-                Please note: this is an adults-only event — no children allowed
-              </p>
+              <p>Please note: this is an adults-only event.</p>
               <AlertTriangle size={18} color="red" />
             </div>
           </div>
@@ -613,7 +611,8 @@ function App() {
             <h2>Confirm your attendance.</h2>
             <p>
               Please confirm your attendance by filling in the form below. Your
-              unique QR code will be sent to your email or whatsapp after confirming.
+              unique QR code will be sent to your email or whatsapp after
+              confirming.
             </p>
 
             <div className="how-it-works">
@@ -631,8 +630,7 @@ function App() {
               <AlertTriangle size={16} />
               <p>
                 <strong>Please note:</strong> this invitation link cannot be
-                transferred or shared. Sharing it may cause you not to receive
-                your QR code.
+                transferred or shared.
               </p>
             </div>
           </div>
