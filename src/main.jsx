@@ -11,6 +11,7 @@ import {
   Sparkles,
   QrCode,
   Ticket,
+  Quote,
   Send,
   AlertTriangle,
   X,
@@ -19,6 +20,11 @@ import "./styles.css";
 
 import logo from "./assets/logo.jpg";
 import invitation from "./assets/invitation.jpg";
+import gallery1 from "./assets/gallery-1.jpg";
+import gallery2 from "./assets/gallery-2.jpg";
+import gallery3 from "./assets/gallery-3.jpg";
+import gallery4 from "./assets/gallery-4.jpg";
+import gallery5 from "./assets/gallery-5.jpg";
 
 const WEDDING_DATE = new Date("2026-11-07T16:00:00+01:00");
 const SHEET_URL =
@@ -383,6 +389,69 @@ function WishesSection() {
   );
 }
 
+const GALLERY_IMAGES = [gallery1, gallery2, gallery3, gallery4, gallery5];
+
+function GallerySection() {
+  const [activeImage, setActiveImage] = useState(null);
+
+  useEffect(() => {
+    if (activeImage === null) return;
+    const onKey = (e) => e.key === "Escape" && setActiveImage(null);
+    document.addEventListener("keydown", onKey);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [activeImage]);
+
+  return (
+    <section className="gallery-section">
+      <div className="container narrow">
+        <div className="section-kicker reveal">
+          <Heart size={15} /> TOGETHER
+        </div>
+        <h2 className="reveal delay-1">Moments we love.</h2>
+        <p className="section-copy reveal delay-2">
+          A few of our favourite memories together.
+        </p>
+      </div>
+
+      <div className="gallery-grid container">
+        {GALLERY_IMAGES.map((src, i) => (
+          <button
+            key={i}
+            className={`gallery-item reveal reveal-zoom delay-${(i % 5) + 1}`}
+            onClick={() => setActiveImage(src)}
+            aria-label="View photo"
+          >
+            <img src={src} alt="" loading="lazy" />
+          </button>
+        ))}
+      </div>
+
+      {activeImage && (
+        <div className="lightbox-overlay" onClick={() => setActiveImage(null)}>
+          <button
+            className="lightbox-close"
+            onClick={() => setActiveImage(null)}
+            aria-label="Close"
+          >
+            <X size={20} />
+          </button>
+          <img
+            src={activeImage}
+            alt=""
+            className="lightbox-image"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+    </section>
+  );
+}
+
 function App() {
   const [status, setStatus] = useState("idle"); // idle | sending | done | error
   const [showModal, setShowModal] = useState(false);
@@ -601,6 +670,58 @@ function App() {
           <p className="hashtag reveal delay-3">#DanielGotJoy</p>
         </div>
       </section>
+      <section className="love-story">
+        <div className="container narrow">
+          <div className="section-kicker reveal">
+            <Heart size={15} /> OUR STORY
+          </div>
+          <h2 className="reveal delay-1">How it all began.</h2>
+
+          <div className="story-quote reveal delay-2">
+            <Quote size={28} />
+          </div>
+
+          <div className="story-body reveal delay-2">
+            <p>
+              Our love story began the sweetest way, with a little nudge from
+              friends who somehow knew before we did. Honestly, Joy wasn't sold
+              on the idea at first — introductions were never really her thing.
+              But fate had other plans. Numbers were exchanged, Daniel sent that
+              first message, and without either of them realizing it, their
+              hearts had quietly started finding their way home.
+            </p>
+
+            <p>
+              One conversation turned into many. Many turned into late nights,
+              endless laughter, shared secrets, and the kind of comfort that
+              makes the whole world feel softer. Somewhere between the sweet
+              messages and the stolen moments, he became her favourite person,
+              her safe place, and the smile she didn't know she'd been waiting
+              for. What started with a little hesitation blossomed into a love
+              so warm, so easy, and so completely theirs.
+            </p>
+
+            <p>
+              Then, this June, Daniel asked Joy the most beautiful question of
+              her life, and in that moment, every laugh, every memory, and every
+              "good morning" text became the first page of their forever.
+            </p>
+          </div>
+
+          <div className="story-highlight reveal reveal-zoom delay-3">
+            <Heart size={22} />
+            <p>And of course, with her whole heart, she said yes!</p>
+          </div>
+
+          <p className="story-close reveal delay-2">
+            Now, they can't wait to celebrate this magical new chapter
+            surrounded by the people they love most, as they step hand in hand
+            into their happily ever after.
+          </p>
+        </div>
+      </section>
+
+      <GallerySection />
 
       <section className="rsvp-section">
         <div className="container rsvp-container">
