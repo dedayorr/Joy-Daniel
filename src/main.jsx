@@ -496,7 +496,7 @@ function App() {
             </h2>
             <p className="reveal reveal-left delay-2">
               The families of{" "}
-              <strong>Late Mr Ebon Echiand &amp; Mrs Grace Abeng Igbara</strong>{" "}
+              <strong>Late Mr Ebon Echi and &amp; Mrs Grace Abeng Igbara</strong>{" "}
               and <strong>Late Mr Lawrence Obi &amp; Mrs Joan Udo Okobi</strong>{" "}
               invite you to share in this special day.
             </p>
