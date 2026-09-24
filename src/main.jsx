@@ -533,7 +533,7 @@ function App() {
 
           <div className="reveal delay-5">
             <button className="scroll-button" onClick={scrollToDetails}>
-              Explore invitation <ArrowDown size={17} />
+              Explore our invitation <ArrowDown size={17} />
             </button>
           </div>
         </div>
