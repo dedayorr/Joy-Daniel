@@ -684,39 +684,39 @@ function App() {
           <div className="story-body reveal delay-2">
             <p>
               Our love story began the sweetest way, with a little nudge from
-              friends who somehow knew before we did. Honestly, Joy wasn't sold
-              on the idea at first — introductions were never really her thing.
+              friends who somehow knew before we did. Honestly, I wasn't sold on
+              the idea at first 🤷🏼‍♀️… introductions were never really my thing.
               But fate had other plans. Numbers were exchanged, Daniel sent that
-              first message, and without either of them realizing it, their
-              hearts had quietly started finding their way home.
+              first message, and without either of us realizing it, our hearts
+              had quietly started finding their way home.
             </p>
 
             <p>
               One conversation turned into many. Many turned into late nights,
               endless laughter, shared secrets, and the kind of comfort that
               makes the whole world feel softer. Somewhere between the sweet
-              messages and the stolen moments, he became her favourite person,
-              her safe place, and the smile she didn't know she'd been waiting
-              for. What started with a little hesitation blossomed into a love
-              so warm, so easy, and so completely theirs.
+              messages and the stolen moments, he became my favourite person, my
+              safe place, and the smile I didn't know I'd been waiting for. What
+              started with a little hesitation blossomed into a love so warm, so
+              easy, and so completely ours🥰.
             </p>
 
             <p>
-              Then, this June, Daniel asked Joy the most beautiful question of
-              her life, and in that moment, every laugh, every memory, and every
-              "good morning" text became the first page of their forever.
+              Then, this June, my love asked me the most beautiful question of
+              my life, and in that moment, every laugh, every memory, and every
+              "good morning" text became the first page of our forever.
             </p>
           </div>
 
           <div className="story-highlight reveal reveal-zoom delay-3">
             <Heart size={22} />
-            <p>And of course, with her whole heart, she said yes!</p>
+            <p>And of course, with her whole heart, I said yes!!!</p>
           </div>
 
           <p className="story-close reveal delay-2">
-            Now, they can't wait to celebrate this magical new chapter
-            surrounded by the people they love most, as they step hand in hand
-            into their happily ever after.
+            Now, we can't wait to celebrate this magical new chapter surrounded
+            by the people we love most, as we step hand in hand into our happily
+            ever after.
           </p>
         </div>
       </section>
