@@ -421,15 +421,15 @@ function App() {
         <div className="hero-glow glow-one" />
         <div className="hero-glow glow-two" />
 
-        <nav className="nav container">
+        {/* <nav className="nav container">
           <a href="#top" className="brand">
-            {/* <img src={logo} alt="Joy & Daniel logo" /> */}
+            <img src={logo} alt="Joy & Daniel logo" />
             <span>JOY & DANIEL</span>
           </a>
           <a className="nav-link" href="#details">
             Invitation
           </a>
-        </nav>
+        </nav> */}
 
         <div className="hero-content container">
           <div className="eyebrow reveal">A BEAUTIFUL BEGINNING</div>
