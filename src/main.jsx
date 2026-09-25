@@ -732,7 +732,7 @@ function App() {
             <h2>Confirm your attendance.</h2>
             <p>
               Please confirm your attendance by filling in the form below. Your
-              unique QR code will be sent to you by email or whatsapp after
+              unique QR code will be sent to you by Email or Whatsapp after
               attendance is confirmed.
             </p>
 
