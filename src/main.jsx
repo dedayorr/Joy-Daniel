@@ -635,15 +635,15 @@ function App() {
                   <QrCode size={26} /> QR Code Required
                 </h3>
                 <p className="qr-copy">
-                  Your personal QR code will be sent to you before the day of
-                  the event. Have it ready — it will be scanned at the entrance.
+                  Your personal QR code will be sent to you before the event.
+                  Please have it ready for scanning at the entrance.
                 </p>
               </div>
             </div>
 
             <div className="caution-banner">
               <AlertTriangle size={18} color="red" />
-              <p>Please note: this is an adults-only event.</p>
+              <p>Kindly note that this is an adults-only celebration.</p>
               <AlertTriangle size={18} color="red" />
             </div>
           </div>
@@ -710,7 +710,7 @@ function App() {
 
           <div className="story-highlight reveal reveal-zoom delay-3">
             <Heart size={22} />
-            <p>And of course, with her whole heart, I said yes!!!</p>
+            <p>And of course, with my whole heart, I said yes!</p>
           </div>
 
           <p className="story-close reveal delay-2">
@@ -732,8 +732,8 @@ function App() {
             <h2>Confirm your attendance.</h2>
             <p>
               Please confirm your attendance by filling in the form below. Your
-              unique QR code will be sent to your email or whatsapp after
-              confirming.
+              unique QR code will be sent to you by email or whatsapp after
+              attendance is confirmed.
             </p>
 
             <div className="how-it-works">
@@ -750,8 +750,8 @@ function App() {
             <div className="rsvp-caution">
               <AlertTriangle size={16} />
               <p>
-                <strong>Please note:</strong> this invitation link cannot be
-                transferred or shared.
+                <strong>Please note:</strong> This invitation is personal and
+                non-transferable. Please do not share your invitation link.
               </p>
             </div>
           </div>
