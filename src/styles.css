@@ -1167,6 +1167,39 @@ footer img {
   .palette-section {
     padding: 75px 0;
   }
+
+  .palette-labels {
+    margin: 18px 0 0;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .palette-section h2 em {
+    font-style: italic;
+    color: #a8456a;
+  }
+
+  .palette-names {
+    margin: 20px 0 0;
+    color: var(--brown);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: clamp(38px, 4vw, 38px);
+    line-height: 1.15;
+  }
+
+  .dress-note {
+    margin: 30px auto 0;
+    max-width: 420px;
+    color: var(--muted);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
   .countdown {
     gap: 6px;
   }

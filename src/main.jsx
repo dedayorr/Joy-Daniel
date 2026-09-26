@@ -653,13 +653,21 @@ function App() {
       <section className="palette-section">
         <div className="container narrow">
           <div className="section-kicker reveal">
-            <Sparkles size={15} /> DRESS CODE
+            <Sparkles size={15} /> AN EVENING IN THE GARDEN
           </div>
           <h2 className="reveal delay-1">
+            Dress Code: <em>Garden Formal</em>
+          </h2>
+          <p className="section-copy reveal delay-2">
+            An intimate celebration of love beneath the evening lights.
+          </p>
+
+          <p className="palette-names reveal delay-2">
             Pastel. Soft neutrals.
             <br />
             Warm earth tones.
-          </h2>
+          </p>
+
           <div className="swatches reveal reveal-zoom delay-2">
             <span className="swatch cream" />
             <span className="swatch blush" />
@@ -667,9 +675,15 @@ function App() {
             <span className="swatch brown" />
             <span className="swatch gold" />
           </div>
-          <p className="hashtag reveal delay-3">#DanielGotJoy</p>
+
+          <p className="dress-note reveal delay-3">
+            Dress beautifully and ready to celebrate love with us.
+          </p>
+
+          <p className="hashtag reveal delay-4">#DanielGotJoy</p>
         </div>
       </section>
+
       <section className="love-story">
         <div className="container narrow">
           <div className="section-kicker reveal">
