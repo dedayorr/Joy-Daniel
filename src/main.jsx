@@ -663,7 +663,7 @@ function App() {
           </p>
 
           <p className="palette-names reveal delay-2">
-            Pastel. Soft neutrals.
+            Colour Palette: Pastel. Soft neutrals.
             <br />
             Warm earth tones.
           </p>
